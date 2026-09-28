@@ -187,107 +187,136 @@
         </p>
       </div>
 
-      <!-- 2-column responsive grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <!-- Responsive product grid: 1 col mobile, 2 col tablet, 3 col desktop -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
-        <!-- ── Card 1: HashSign™ ── -->
+        <!-- ── HashSign.io — agent signing API ── -->
         <a
-          href="https://hashsign.app"
+          href="https://hashsign.io"
           target="_blank"
           rel="noopener noreferrer"
-          class="product-card group block rounded-2xl border border-slate-800 bg-slate-900/55 backdrop-blur-sm overflow-hidden cursor-pointer hover:-translate-y-1 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60"
-          aria-label="Visit HashSign™"
+          class="product-card group flex flex-col rounded-2xl border border-slate-800 bg-slate-900/55 backdrop-blur-sm overflow-hidden cursor-pointer hover:-translate-y-1 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60"
+          aria-label="Visit HashSign.io"
         >
           <div class="card-accent-bar w-full"></div>
-          <div class="p-8">
+          <div class="p-8 flex flex-col flex-1">
 
-            <!-- Icon -->
             <div class="card-icon w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
               </svg>
             </div>
 
-            <!-- Name & badge -->
             <div class="flex flex-wrap items-center gap-2.5 mb-3">
-              <h3 class="text-lg font-bold text-slate-100">HashSign™</h3>
+              <h3 class="text-lg font-bold text-slate-100">HashSign.io</h3>
               <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                Web3 · AI
+                Agents · API
               </span>
             </div>
 
-            <!-- Description -->
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              The Web3 e-signature platform powered by Hedera and Gemini AI.
-              Cryptographically verifiable document signing with immutable blockchain
-              anchoring and intelligent document analysis — built for enterprise compliance.
+              Cryptographic signing for AI agents. One OpenAPI contract covers upload, sign, and verify: a classical signature or a hybrid ECDSA P-256 + ML-DSA-65 envelope, with SHA-256 of those signatures anchored on Hedera Consensus Service. Agents hold API keys, not signing keys.
             </p>
 
-            <!-- Tech pills -->
             <div class="flex flex-wrap gap-2 mb-6">
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Hedera Hashgraph</span>
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Gemini AI</span>
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Smart Contracts</span>
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">SOC 2 Ready</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">ML-DSA-65</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Hedera HCS</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">OpenAPI</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Python · TypeScript</span>
             </div>
 
-            <!-- Visit link -->
-            <div class="visit-link flex items-center gap-1.5 text-slate-500 text-xs font-medium transition-colors duration-200">
-              <span>hashsign.app</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <div class="visit-link mt-auto flex items-center gap-1.5 text-slate-500 text-xs font-medium transition-colors duration-200">
+              <span>hashsign.io</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
             </div>
           </div>
         </a>
 
-        <!-- ── Card 2: MilRenter ── -->
+        <!-- ── HashSign mobile ── -->
         <a
-          href="https://milrenter.com"
+          href="https://hashsign.app"
           target="_blank"
           rel="noopener noreferrer"
-          class="product-card group block rounded-2xl border border-slate-800 bg-slate-900/55 backdrop-blur-sm overflow-hidden cursor-pointer hover:-translate-y-1 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60"
-          aria-label="Visit MilRenter"
+          class="product-card group flex flex-col rounded-2xl border border-slate-800 bg-slate-900/55 backdrop-blur-sm overflow-hidden cursor-pointer hover:-translate-y-1 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60"
+          aria-label="Visit HashSign mobile app"
         >
           <div class="card-accent-bar w-full"></div>
-          <div class="p-8">
+          <div class="p-8 flex flex-col flex-1">
 
-            <!-- Icon -->
             <div class="card-icon w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
               </svg>
             </div>
 
-            <!-- Name & badge -->
             <div class="flex flex-wrap items-center gap-2.5 mb-3">
-              <h3 class="text-lg font-bold text-slate-100">MilRenter</h3>
-              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                Housing · Military
+              <h3 class="text-lg font-bold text-slate-100">HashSign Mobile</h3>
+              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">
+                iOS · Android
               </span>
             </div>
 
-            <!-- Description -->
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
-              A specialized digital housing platform dedicated to serving military
-              personnel and their families. Simplifying the search for rental housing
-              near bases with tools built for the unique demands of military life.
+              Native contract signing for iPhone and Android, coming to the App Store and Google Play. Gemini AI reads every clause before you sign, then SHA-256 hashes are anchored on Hedera. Hybrid post-quantum signatures — ECDSA P-256 plus ML-DSA-65 — keep those proofs verifiable beyond classical cryptography. Biometrics and on-device key storage stay on the phone.
             </p>
 
-            <!-- Tech pills -->
             <div class="flex flex-wrap gap-2 mb-6">
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Housing SaaS</span>
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Military Focus</span>
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">PCS Support</span>
-              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">BAH Aware</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Gemini AI</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">ML-DSA-65</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Hedera HCS</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">App Store</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Google Play</span>
             </div>
 
-            <!-- Visit link -->
-            <div class="visit-link flex items-center gap-1.5 text-slate-500 text-xs font-medium transition-colors duration-200">
-              <span>milrenter.com</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <div class="visit-link mt-auto flex items-center gap-1.5 text-slate-500 text-xs font-medium transition-colors duration-200">
+              <span>hashsign.app</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- ── HashSign web ── -->
+        <a
+          href="https://hashsign.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="product-card group flex flex-col rounded-2xl border border-slate-800 bg-slate-900/55 backdrop-blur-sm overflow-hidden cursor-pointer hover:-translate-y-1 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/60 md:col-span-2 xl:col-span-1"
+          aria-label="Visit HashSign web app"
+        >
+          <div class="card-accent-bar w-full"></div>
+          <div class="p-8 flex flex-col flex-1">
+
+            <div class="card-icon w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" />
+              </svg>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2.5 mb-3">
+              <h3 class="text-lg font-bold text-slate-100">HashSign Web</h3>
+              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">
+                Browser · Post-Quantum
+              </span>
+            </div>
+
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              The browser signing surface for the same contracts. Review with Gemini AI, sign in the browser, and anchor SHA-256 proofs on Hedera Consensus Service. Hybrid post-quantum mode adds an ML-DSA-65 signature beside ECDSA P-256, so the audit trail stays sound against quantum-capable adversaries.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Gemini AI</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">ML-DSA-65</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Hedera HCS</span>
+              <span class="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700/80">Browser</span>
+            </div>
+
+            <div class="visit-link mt-auto flex items-center gap-1.5 text-slate-500 text-xs font-medium transition-colors duration-200">
+              <span>hashsign.app</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
             </div>
